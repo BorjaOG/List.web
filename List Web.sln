@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List Web", "List Web\List Web.csproj", "{CD554043-74F9-412E-8515-63F3C22E4ED5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{7C45156E-4A00-4534-9BD7-D8F988059164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{33689CBA-960D-486B-A98E-4EE700562EA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD554043-74F9-412E-8515-63F3C22E4ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD554043-74F9-412E-8515-63F3C22E4ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD554043-74F9-412E-8515-63F3C22E4ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD554043-74F9-412E-8515-63F3C22E4ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C45156E-4A00-4534-9BD7-D8F988059164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C45156E-4A00-4534-9BD7-D8F988059164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C45156E-4A00-4534-9BD7-D8F988059164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C45156E-4A00-4534-9BD7-D8F988059164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33689CBA-960D-486B-A98E-4EE700562EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33689CBA-960D-486B-A98E-4EE700562EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33689CBA-960D-486B-A98E-4EE700562EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33689CBA-960D-486B-A98E-4EE700562EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94EDE983-79B1-4DE4-A392-20AAC492542B}
+	EndGlobalSection
+EndGlobal
