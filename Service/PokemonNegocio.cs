@@ -27,7 +27,7 @@ namespace Service
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=true;";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "select numero, nombre, p.descripcion, Urlimagen, e.descripcion tipo, d. Descripcion Debilidad, P. IdTipo, P.IdDebilidad, P.Id  from pokemons p, elementos e, elementos d where e.id = P.idtipo AND d.id = p.IdDebilidad AND p.Activo = 1 ";
+                comando.CommandText = "select numero, nombre, p.descripcion, Urlimagen, e.descripcion tipo, d. Descripcion Debilidad, P. IdTipo, P.IdDebilidad, P.Id, P.Activo from pokemons p, elementos e, elementos d where e.id = P.idtipo AND d.id = p.IdDebilidad ";
                 if (Id != "")
                     comando.CommandText += " and P.Id = " + Id;
                 comando.Connection = conexion;
@@ -52,6 +52,7 @@ namespace Service
                     aux.Debilidad = new elemento();
                     aux.Debilidad.Id = (int)lector["IdDebilidad"];
                     aux.Debilidad.Descripcion = (string)lector["Debilidad"];
+                    aux.Activo = bool.Parse(lector["Activo"].ToString());
 
                     lista.Add(aux);
 
@@ -233,13 +234,14 @@ namespace Service
             }
         }
 
-        public void eliminarlogico(int Id)
+        public void eliminarlogico(int Id, bool activo = false)
         {
             try
             {
                 DataAccess datos = new DataAccess ();
-                datos.setearConsulta("update pokemons set activo = 0 where id = @ = Id");
+                datos.setearConsulta("update pokemons set activo = @activo where id = @Id");
                 datos.setearparametro("@ID", Id);
+                datos.setearparametro("@activo", activo);
                 datos.ejecutarAccion();
 
             }
