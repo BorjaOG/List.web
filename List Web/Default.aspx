@@ -39,8 +39,8 @@
                         <div class="card-body">
                             <h5 class="card-title"><%#Eval("Nombre") %></h5>
                             <p class="card-text"><%#Eval("Descripcion") %></p>
-                            <a href="DetailPokemon.aspx?Id=<%#Eval("Id") %>">Ver detalle</a>
-                            <asp:Button Text="btn" CssClass="btn btn-primary" runat="server" ID="btnBtn" CommandArgument='<%#Eval("ID") %>' CommandName="PokemonID" OnClick="btnBtn_Click"/>
+                             <a CssClass="btn btn-primary" href="DetailPokemon.aspx?Id=<%#Eval("Id") %>">Ver detalle</a>
+                           
                         </div>
                     </div>
                 </div>

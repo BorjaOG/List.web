@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="DataAccess.cs" />
     <Compile Include="element.cs" />
+    <Compile Include="EmailService.cs" />
     <Compile Include="PokemonNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Script_db\POKEDEX_DB.sql" />

@@ -252,13 +252,13 @@ namespace Service
             }
         }
 
-        public List<Pokemon> filtrar(string campo, string criterio, string filtro)
+        public List<Pokemon> filtrar(string campo, string criterio, string filtro, string estado)
         {
             List<Pokemon> lista = new List<Pokemon>();
             DataAccess datos = new DataAccess ();
             try
             {
-                string consulta = "select numero, nombre, p.descripcion, Urlimagen, e.descripcion tipo, d. Descripcion Debilidad, P. IdTipo, P.IdDebilidad, P.Id  from pokemons p, elementos e, elementos d where e.id = P.idtipo AND d.id = p.IdDebilidad AND p.Activo = 1 AND  ";
+                string consulta = "select numero, nombre, p.descripcion, Urlimagen, e.descripcion tipo, d. Descripcion Debilidad, P. IdTipo, P.IdDebilidad, P.Id, P.Activo  from pokemons p, elementos e, elementos d where e.id = P.idtipo AND d.id = p.IdDebilidad AND  ";
                 if (campo == "Numero")
                 {
                     switch (criterio)
@@ -330,6 +330,7 @@ namespace Service
                     aux.Debilidad = new elemento();
                     aux.Debilidad.Id = (int)datos.Reader["IdDebilidad"];
                     aux.Debilidad.Descripcion = (string)datos.Reader["Debilidad"];
+                    aux.Activo = bool.Parse(datos.Reader["Activo"].ToString());
 
                     lista.Add(aux);
 

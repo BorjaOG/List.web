@@ -1,0 +1,18 @@
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\obj\Debug\Service.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\bin\Debug\Service.dll
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\bin\Debug\Service.pdb
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\bin\Debug\Dominio.dll
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\bin\Debug\Dominio.pdb
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\obj\Debug\Service.dll
+C:\Users\Admin\Desktop\Curso C# Nivel 2\Ado.net\Service\obj\Debug\Service.pdb
+C:\Users\Admin\Desktop\ASPX\List Web\Service\bin\Debug\Service.dll
+C:\Users\Admin\Desktop\ASPX\List Web\Service\bin\Debug\Service.pdb
+C:\Users\Admin\Desktop\ASPX\List Web\Service\bin\Debug\Dominio.dll
+C:\Users\Admin\Desktop\ASPX\List Web\Service\bin\Debug\Dominio.pdb
+C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.dll
+C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.pdb

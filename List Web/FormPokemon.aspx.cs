@@ -48,6 +48,8 @@ namespace List_Web
                     //List<Pokemon> lista = negocio.listar(ID);
                     //Pokemon seleccionado = lista[0];
                     Pokemon seleccionado = (negocio.listar(ID))[0];
+                    //save pokemon selected in session
+                    Session.Add("pokeSeleccionado", seleccionado);
 
 
                     //pre cargar todos los campos..
@@ -56,21 +58,23 @@ namespace List_Web
                     txbNumber.Text = seleccionado.Numero.ToString();
                     txbDescription.Text = seleccionado.Descripcion;
                     txbImageUrl.Text = seleccionado.UrlImagen;
+
                     ddlType.SelectedValue = seleccionado.Tipo.Id.ToString();
                     ddlWeak.SelectedValue = seleccionado.Debilidad.Id.ToString();
                     txbImageUrl_TextChanged(sender, e);
 
+                    //config actions
+                    if (!seleccionado.Activo)
+                        btnInactive.Text = "Reactivate";
 
                 }
-
-                
 
             }
             catch (Exception ex)
             {
 
                 Session.Add("error", ex);
-                throw;
+                
 
                 //error screen
             }
@@ -144,12 +148,18 @@ namespace List_Web
             }
         }
 
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
         protected void btnInactive_Click(object sender, EventArgs e)
         {
             try
             {
                 PokemonNegocio negocio = new PokemonNegocio();
-                negocio.eliminarlogico(int.Parse(txbId.Text));
+                Pokemon seleccionado = (Pokemon)Session["pokeSeleccionado"];
+
+                negocio.eliminarlogico(seleccionado.Id, !seleccionado.Activo);
                 Response.Redirect("ListaPokemon.aspx");
 
             }
@@ -160,9 +170,5 @@ namespace List_Web
             }
         }
 
-        protected void btnCancel_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Default.aspx");
-        }
     }
 }
