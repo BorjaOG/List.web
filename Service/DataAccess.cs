@@ -66,6 +66,22 @@ namespace Service
             }
         }
 
+        public int ejecutarAccionScalar()
+        {
+            command.Connection = conection;
+
+            try
+            {
+                conection.Open();
+               return int.Parse(command.ExecuteScalar().ToString());
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         public void setearparametro(string nombre, object valor)
         {
             command.Parameters.AddWithValue(nombre, valor);

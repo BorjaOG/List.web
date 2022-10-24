@@ -7,7 +7,6 @@
 
     <h1>Pokedex</h1>
     <p>todo lo que necesitas saber sobre pokemon</p>
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
         <%-- <% 
@@ -39,13 +38,12 @@
                         <div class="card-body">
                             <h5 class="card-title"><%#Eval("Nombre") %></h5>
                             <p class="card-text"><%#Eval("Descripcion") %></p>
-                             <a CssClass="btn btn-primary" href="DetailPokemon.aspx?Id=<%#Eval("Id") %>">Ver detalle</a>
-                           
+                             <a CssClass="btn btn-primary" href="DetailPokemon.aspx?Id=<%#Eval("Id") %>">Ver detalle</a>  
                         </div>
-                    </div>
-                </div>
+                    </div> <hr />
+                </div> 
             </ItemTemplate>
         </asp:Repeater>
-
     </div>
+  <hr /> 
 </asp:Content>

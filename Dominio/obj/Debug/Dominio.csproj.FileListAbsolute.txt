@@ -10,3 +10,9 @@ C:\Users\Admin\Desktop\ASPX\List Web\Dominio\obj\Debug\Dominio.csproj.AssemblyRe
 C:\Users\Admin\Desktop\ASPX\List Web\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\ASPX\List Web\Dominio\obj\Debug\Dominio.dll
 C:\Users\Admin\Desktop\ASPX\List Web\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\bin\Debug\Dominio.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Debug\Dominio.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Debug\Dominio.pdb

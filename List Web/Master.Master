@@ -13,11 +13,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="Default.aspx">Pokedex</a>
+                    <hr />
+                    <a class="navbar-brand"  href="Default.aspx">Pokedex</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -28,33 +28,36 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="ListaPokemon.aspx">Lista Pokemon</a>
+                            </li>   
+                            <li class="nav-item">
+                                <a class="nav-link" href="Favoritos.aspx">Favoritos</a>
                             </li>
-                            <li class="nav-item"></li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="Perfil.aspx">Mi Perfil</a>
+                            </li>    
+                            
                         </ul>
-                        <span class="navbar-text">
-                            <div class="collapse navbar-collapse">
-                                <a class="nav-link" href="Login.aspx">Login</a>
-                                <a class="nav-link" href="contacto.aspx">Contactanos</a>
-
-                            </div>
-
-
-                        </span>
+                        
+                            
+                            <a class="nav-link active" href="Login.aspx">Login</></a>                          
+                                <a class="nav-link active" href="Registro.aspx">Registrate</a>             
                     </div>
                 </div>
             </nav>
-            <div class="container">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-
-            </div>
-            <div>
-                <footer>
-                    <hr />
-                    FOOOOOTTTTTEEEEERRRRR
-                </footer>
-            </div>
         </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="fixed-bottom">
+            <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <hr />
+                <div class="mx-auto" style="width: 150px;">
+                 <a class="nav-link active"  href="contacto.aspx">CONTACTO</a>
+                </div>
+            </footer>
+        </div>
+
     </form>
 </body>
 </html>

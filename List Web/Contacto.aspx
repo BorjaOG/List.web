@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <hr />
 
     <div class=" row">
         <div class="col-2"></div>
@@ -19,7 +20,7 @@
                 <label class="form-label">Mensaje</label>
                 <asp:TextBox TextMode="MultiLine" runat="server" class="form-control" id="txtmensaje" rows="3"/> 
             </div>
-            <asp:Button class="btn-primary" ID="btnAceptar" OnClick="btnAceptar_Click" runat="server" Text="Aceptar" />
+            <asp:Button class="btn-primary" ID="btnAceptar" OnClick="btnAceptar_Click" runat="server" Text="Enviar" />
         </div>
         <div class="col"></div>
     </div>

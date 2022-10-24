@@ -16,3 +16,12 @@ C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.csproj.CoreCompil
 C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.csproj.CopyComplete
 C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.dll
 C:\Users\Admin\Desktop\ASPX\List Web\Service\obj\Debug\Service.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Debug\Service.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Debug\Service.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Debug\Dominio.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Debug\Dominio.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Debug\Service.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Debug\Service.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Debug\Service.pdb

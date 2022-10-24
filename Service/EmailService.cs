@@ -16,16 +16,16 @@ namespace Service
         public EmailService()
         {
             server = new SmtpClient();
-            server.Credentials = new NetworkCredential("programationiii@gmail.com", "programcion3");
+            server.Credentials = new NetworkCredential("3f3a7378a6bab8", "321969d388b652");
             server.EnableSsl = true;
-            server.Port = 587;
-            server.Host = "smtp.gmail.com";
+            server.Port = 2525;
+            server.Host = "smtp.mailtrap.io";
         }
 
         public void montarCorreo(string emailDestino, string asunto, string cuerpo)
         {
             email = new MailMessage();
-            email.From = new MailAddress("noresponder@ecommerceprogramacioniii.com");
+            email.From = new MailAddress("noreply@PokedexWeb.com");
             email.To.Add(emailDestino);
             email.Subject = asunto;
             email.IsBodyHtml = true;
