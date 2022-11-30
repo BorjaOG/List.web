@@ -4,16 +4,18 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <hr />
+    <h1>Login</h1>
     <div class="row">
         <div class="col-4">
+            
             <div class="mb-3">
-                <label class="form-label">User</label>
-                <asp:TextBox runat="server" ID="txtUser" placeholder="user name" CssClass="form-control" />
+                <label class="form-label">Email</label>
+                <asp:TextBox runat="server" CssClass="form-control" placeholder="name@example.com" ID="txtemail" />
             </div>
             <div class="mb-3">
                 <label class="form-label">Password</label>
-                <asp:TextBox runat="server" placeholder="******" TextMode="Password" ID="txtPassword" CssClass="form-control " />
-            </div>
+                <asp:TextBox runat="server" CssClass="form-control" Placeholder="******" ID="txtPass" TextMode="Password" />
+            </div>          
         </div>
         <div class="mb-3">
             <asp:Button Text="Ingresar" runat="server" ID="bntingresar" OnClick="bntingresar_Click" CssClass="btn btn-primary" />

@@ -4,25 +4,25 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <hr />
+    <h1>Registrate</h1>
     <div class="row">
-        <div class="col-4">
-            <h2>Crea tu perfil de Trainee</h2>
+        <div class="col-md-4">
             <div class="mb-3">
-                <label class="form-label">Nombre</label>
-                <asp:TextBox runat="server" ID="txtNombre" placeholder="Nombre" CssClass="form-control" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Email </label>
-                <asp:TextBox runat="server" class="form-control" ID="txtemail" placeholder="name@example.com" />
+                <label class="form-label">Email</label>
+                <asp:TextBox runat="server" CssClass="form-control" ID="txtmail" />
             </div>
             <div class="mb-3">
                 <label class="form-label">Password</label>
-                <asp:TextBox runat="server" placeholder="******" ID="txtPassword" TextMode="Password" CssClass="form-control " />
+                <asp:TextBox runat="server" CssClass="form-control" ID="txtPassword" />
             </div>
-        </div>
-        <div class="mb-3">
-            <asp:Button Text="Registrarse" runat="server" ID="bntregistro" OnClick="bntregistro_Click" CssClass=" btn btn-primary" />
-            <a href="Default.aspx">Cancelar</a>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <asp:TextBox runat="server" CssClass="form-control" ID="txtNombre" />
+            </div>
+            <div class="mb-3">
+                <asp:Button ID="btnregistro" OnClick="btnregistro_Click1" runat="server" Text="Registrarse" CssClass="btn btn-primary" />
+                <a href="/">Volver</a>
+            </div>
         </div>
     </div>
 </asp:Content>

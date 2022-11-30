@@ -14,6 +14,12 @@ namespace List_Web
         public bool AdvancedFilter { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (!Seguridad.esAdmin(Session["trainee"]))
+            {
+                Session.Add("error", "Se requiere ser Admin para acceder a esta pantalla");
+                Response.Redirect("Error.aspx");
+            }
             AdvancedFilter = chkAdvanced.Checked;
             if (!IsPostBack)
             {

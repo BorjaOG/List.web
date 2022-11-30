@@ -24,6 +24,7 @@ namespace Service
 
         public void montarCorreo(string emailDestino, string asunto, string cuerpo)
         {
+
             email = new MailMessage();
             email.From = new MailAddress("noreply@PokedexWeb.com");
             email.To.Add(emailDestino);

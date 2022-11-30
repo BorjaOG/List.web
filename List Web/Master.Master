@@ -17,7 +17,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <hr />
-                    <a class="navbar-brand"  href="Default.aspx">Pokedex</a>
+                    <a class="navbar-brand" href="Default.aspx">Pokedex</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -27,33 +27,45 @@
                                 <a class="nav-link active" aria-current="page" href="Default.aspx">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ListaPokemon.aspx">Lista Pokemon</a>
-                            </li>   
-                            <li class="nav-item">
                                 <a class="nav-link" href="Favoritos.aspx">Favoritos</a>
                             </li>
-                              <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="Perfil.aspx">Mi Perfil</a>
-                            </li>    
-                            
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ListaPokemon.aspx">Lista Pokemon</a>
+                            </li>
                         </ul>
-                        
+                        <div class="d-flex">
+                            <%if (!Service.Seguridad.sesionActiva(Session["trainee"]))
+                                {  %>
+                                     
+                            <asp:Button class="btn btn-outline-primary me-2" OnClick="btnLogin_Click"  ID="btnLogin" runat="server" Text="Login" />                       
+                            <asp:Button class="btn btn-outline-primary me-2" OnClick="btnRegistro_Click"  ID="btnRegistro" runat="server" Text="Resgistrate" />
+                            <% }
+                                else
+                                {
+                            %>
                             
-                            <a class="nav-link active" href="Login.aspx">Login</></a>                          
-                                <a class="nav-link active" href="Registro.aspx">Registrate</a>             
+                            <asp:Button class="btn btn-outline-primary me-2" Onclick="btnSalir_Click" ID="btnSalir" runat="server" Text="Salir" />
+                            <%} %> <asp:Label class="nav-link" Text="" ID="lblUser" runat="server" />
+                            <asp:Image  ID="imagenAvatar" Style="height: 40px" Width="40px" border-radius="50%"
+                                runat="server" />
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
         <div class="container">
+            
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
+        </div> 
         <div class="fixed-bottom">
             <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <hr />
                 <div class="mx-auto" style="width: 150px;">
-                 <a class="nav-link active"  href="contacto.aspx">CONTACTO</a>
+                    <asp:Button CssClass="btn-primary" OnClick="btncontacto_Click" ID="btncontacto" runat="server" href="contacto.aspx" Text="CONTACTO" />
                 </div>
             </footer>
         </div>

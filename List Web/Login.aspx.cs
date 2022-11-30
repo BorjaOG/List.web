@@ -18,28 +18,28 @@ namespace List_Web
 
         protected void bntingresar_Click(object sender, EventArgs e)
         {
-            Usuario usuario;
-            UsuarioNegocio negocio = new UsuarioNegocio();
+
+            Trainee trainee = new Trainee();
+            TraineeNegocio negocio = new TraineeNegocio();
             try
             {
-                usuario = new Usuario(txtUser.Text, txtPassword.Text, false);
-                if (negocio.Loguear(usuario))
+                trainee.Email = txtemail.Text;
+                trainee.Pass = txtPass.Text;
+                if (negocio.Login(trainee))
                 {
-                    Session.Add("usuario", usuario);
-                    Response.Redirect("MenuLogin.aspx", false);
+                    Session.Add("trainee", trainee);
+                    Response.Redirect("Perfil.aspx", false);
                 }
                 else
                 {
-                    Session.Add("error", "user o pass incorrecto");
+                    Session.Add("error", "User o Pass incorrectos");
                     Response.Redirect("Error.aspx", false);
                 }
-
             }
             catch (Exception ex)
             {
 
-                Session.Add("error", ex.ToString());
-                Response.Redirect("Error.aspx");
+                Session.Add("error", ex);
             }
         }
     }

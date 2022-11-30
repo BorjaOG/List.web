@@ -71,12 +71,14 @@
     <Content Include="Default.aspx" />
     <Content Include="DetailPokemon.aspx" />
     <Content Include="Error.aspx" />
+    <Content Include="Favoritos.aspx" />
     <Content Include="FormPokemon.aspx" />
     <Content Include="ListaPokemon.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Pagina1Login.aspx" />
     <Content Include="MenuLogin.aspx" />
     <Content Include="Pagina2LoginAdmin.aspx" />
+    <Content Include="Perfil.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -108,6 +110,13 @@
     </Compile>
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Favoritos.aspx.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Favoritos.aspx.designer.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormPokemon.aspx.cs">
       <DependentUpon>FormPokemon.aspx</DependentUpon>
@@ -158,6 +167,13 @@
     <Compile Include="Pagina2LoginAdmin.aspx.designer.cs">
       <DependentUpon>Pagina2LoginAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
@@ -187,6 +203,9 @@
       <Project>{33689cba-960d-486b-a98e-4ee700562ea9}</Project>
       <Name>Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

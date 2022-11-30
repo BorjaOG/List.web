@@ -74,6 +74,7 @@ namespace List_Web
             {
 
                 Session.Add("error", ex);
+                Response.Redirect("Error.aspx");
                 
 
                 //error screen
@@ -114,7 +115,7 @@ namespace List_Web
             catch (Exception ex)
             {
                 Session.Add("error", ex);
-                throw;
+                Response.Redirect("Error.aspx");
             }
 
         }
@@ -145,6 +146,7 @@ namespace List_Web
             {
 
                 Session.Add("Error", ex);
+                Response.Redirect("Error.aspx");
             }
         }
 
@@ -167,6 +169,7 @@ namespace List_Web
             {
 
                 Session.Add("Error", ex);
+                Response.Redirect("Error.aspx");
             }
         }
 
