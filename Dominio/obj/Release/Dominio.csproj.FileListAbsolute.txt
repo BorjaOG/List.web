@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\bin\Release\Dominio.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\bin\Release\Dominio.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Release\Dominio.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Release\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Release\Dominio.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Dominio\obj\Release\Dominio.pdb

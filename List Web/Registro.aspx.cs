@@ -50,7 +50,7 @@ namespace List_Web
                 negocio.actualizar(user);
 
                 Image img = (Image)Master.FindControl("imagenAvatar");
-                img.ImageUrl = "~/images/" + user.ImagenPerfil;
+                img.ImageUrl = user.ImagenPerfil + "?V=" + DateTime.Now.Ticks.ToString();
 
 
             }

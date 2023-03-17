@@ -1,0 +1,9 @@
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Release\Service.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Release\Service.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Release\Dominio.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\bin\Release\Dominio.pdb
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Release\Service.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Release\Service.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Release\Service.csproj.CopyComplete
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Release\Service.dll
+C:\Users\Admin\Desktop\Repo GitHub\Web-List\Service\obj\Release\Service.pdb

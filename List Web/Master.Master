@@ -27,13 +27,13 @@
                                 <a class="nav-link active" aria-current="page" href="Default.aspx">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Favoritos.aspx">Favoritos</a>
+                                <a class="nav-link" href="Favoritos.aspx">Favorites</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Perfil.aspx">Mi Perfil</a>
+                                <a class="nav-link" href="Perfil.aspx">My Profile</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ListaPokemon.aspx">Lista Pokemon</a>
+                                <a class="nav-link" href="ListaPokemon.aspx">Pokemon List</a>
                             </li>
                         </ul>
                         <div class="d-flex">
@@ -41,13 +41,13 @@
                                 {  %>
                                      
                             <asp:Button class="btn btn-outline-primary me-2" OnClick="btnLogin_Click"  ID="btnLogin" runat="server" Text="Login" />                       
-                            <asp:Button class="btn btn-outline-primary me-2" OnClick="btnRegistro_Click"  ID="btnRegistro" runat="server" Text="Resgistrate" />
+                            <asp:Button class="btn btn-outline-primary me-2" OnClick="btnRegistro_Click"  ID="btnRegistro" runat="server" Text="Resgister" />
                             <% }
                                 else
                                 {
                             %>
                             
-                            <asp:Button class="btn btn-outline-primary me-2" Onclick="btnSalir_Click" ID="btnSalir" runat="server" Text="Salir" />
+                            <asp:Button class="btn btn-outline-primary me-2" Onclick="btnSalir_Click" ID="btnSalir" runat="server" Text="Back" />
                             <%} %> <asp:Label class="nav-link" Text="" ID="lblUser" runat="server" />
                             <asp:Image  ID="imagenAvatar" Style="height: 40px" Width="40px" border-radius="50%"
                                 runat="server" />
@@ -65,7 +65,7 @@
             <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <hr />
                 <div class="mx-auto" style="width: 150px;">
-                    <asp:Button CssClass="btn-primary" OnClick="btncontacto_Click" ID="btncontacto" runat="server" href="contacto.aspx" Text="CONTACTO" />
+                    <asp:Button CssClass="btn-primary" OnClick="btncontacto_Click" ID="btncontacto" runat="server" href="contacto.aspx" Text="CONTACT" />
                 </div>
             </footer>
         </div>
