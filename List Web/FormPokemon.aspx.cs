@@ -101,7 +101,7 @@ namespace List_Web
                 if(Request.QueryString["ID"] != null)
                 {
                     nuevo.Id = int.Parse(txbId.Text);
-                    negocio.modificarConSp(nuevo);
+                    negocio.modificarConSP(nuevo);
 
                 }
                   
@@ -161,7 +161,7 @@ namespace List_Web
                 PokemonNegocio negocio = new PokemonNegocio();
                 Pokemon seleccionado = (Pokemon)Session["pokeSeleccionado"];
 
-                negocio.eliminarlogico(seleccionado.Id, !seleccionado.Activo);
+                negocio.eliminarLogico(seleccionado.Id, !seleccionado.Activo);
                 Response.Redirect("ListaPokemon.aspx");
 
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,36 +9,91 @@ using Dominio;
 
 namespace Service
 {
-    public class UsuarioNegocio
+    public class DataAccess
     {
-        public bool Loguear(Usuario usuario)
+        private SqlConnection conection;
+        private SqlCommand command;
+        private SqlDataReader reader;
+        public SqlDataReader Reader
         {
-			DataAccess datos = new DataAccess();
-			try
-			{
-				datos.setearConsulta("Select id, tipousuario from Usuarios where usuario = @user And pass = @pass");
-				datos.setearparametro("@user", usuario.User);
-				datos.setearparametro("@pass", usuario.Pass);
+            get { return reader; }
+        }
 
-				datos.ejecutarlectura();
-				while (datos.Reader.Read())
-				{
-					usuario.Id = (int)datos.Reader["Id"];
-					usuario.TipoUsuario = (int)(datos.Reader["TipoUsuario"]) == 2 ? TipoUsuario.Admin : TipoUsuario.Normal;
-					return true;
-				}
+        public DataAccess()
+        {
+            conection = new SqlConnection("server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=true;");
+            command = new SqlCommand();
+        }
 
-				return false;
-			}
-			catch (Exception ex)
-			{
+        public void setearConsulta(string consulta)
+        {
+            command.CommandType = System.Data.CommandType.Text;
+            command.CommandText = consulta;
+        }
 
-				throw ex;
-			}
-			finally
-			{
-				datos.cerrarconexion();
-			}
+        public void setearProcedimiento(string sp)
+        {
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = sp;
+
+        }
+
+        public void ejecutarlectura()
+        {
+            command.Connection = conection;
+            try
+            {
+                conection.Open();
+                reader = command.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        public void ejecutarAccion()
+        {
+            command.Connection = conection;
+
+            try
+            {
+                conection.Open();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public int ejecutarAccionScalar()
+        {
+            command.Connection = conection;
+
+            try
+            {
+                conection.Open();
+                return int.Parse(command.ExecuteScalar().ToString());
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void setearparametro(string nombre, object valor)
+        {
+            command.Parameters.AddWithValue(nombre, valor);
+        }
+
+        public void cerrarconexion()
+        {
+            if (reader != null)
+                reader.Close();
+            conection.Close();
         }
     }
 }

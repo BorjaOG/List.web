@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="row">
         <div class="col-12">
-            <h3>Te logueaste correctamente</h3>
+            <h3>Log in successfull</h3>
             <hr />
             </div>
             <div class="col-4">
@@ -14,7 +14,7 @@
                 <%if (Session["usuario"] != null && ((Dominio.Usuario)Session["usuario"]).TipoUsuario == Dominio.TipoUsuario.Admin)
                     {  %>
                 <asp:Button Text="pag2" id="btnpag2" runat="server" OnClick="btnpag2_Click" CssClass="btn-primary" />
-                <p>Tienes que ser Admin.</p>
+                <p>Only Admins can acces.</p>
                 <% }%>
             </div>
         </div>

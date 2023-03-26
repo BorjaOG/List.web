@@ -47,6 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -58,7 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess.cs" />
     <Compile Include="element.cs" />
     <Compile Include="EmailService.cs" />
     <Compile Include="PokemonNegocio.cs" />
@@ -66,11 +66,6 @@
     <Compile Include="Seguridad.cs" />
     <Compile Include="TraineeNegocio.cs" />
     <Compile Include="UsuarioNegocio.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Script_db\Script_db\POKEDEX_DB.sql" />
-    <Content Include="Script_db\Script_db\PROCEDURES.sql" />
-    <Content Include="Script_db\Script_db\Users.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominio\Dominio.csproj">
@@ -89,6 +84,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Script_db\script poke.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,8 +24,8 @@ namespace List_Web
             if (!IsPostBack)
             {
                 PokemonNegocio negocio = new PokemonNegocio();
-                Session.Add("ListaPokemon", negocio.listarconSP());
-                dgvPokemons.DataSource = negocio.listarconSP();
+                Session.Add("ListaPokemon", negocio.listarConSP());
+                dgvPokemons.DataSource = negocio.listarConSP();
                 dgvPokemons.DataBind();
             }
         }

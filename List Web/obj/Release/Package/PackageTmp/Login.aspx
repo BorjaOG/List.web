@@ -18,8 +18,8 @@
             </div>          
         </div>
         <div class="mb-3">
-            <asp:Button Text="Ingresar" runat="server" ID="bntingresar" OnClick="bntingresar_Click" CssClass="btn btn-primary" />
-            <a href="Default.aspx">Cancelar</a>
+            <asp:Button Text="Log in" runat="server" ID="bntingresar" OnClick="bntingresar_Click" CssClass="btn btn-primary" />
+            <a href="Default.aspx">Back</a>
         </div>
     </div>
 </asp:Content>

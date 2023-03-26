@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <hr />
 
-    <h1>LISTA POKEMON</h1>
+    <h1>POKEMON LIST</h1>
     <div class="row">
         <div class="col-6">
             <div class="mb-3">

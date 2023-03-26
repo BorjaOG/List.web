@@ -16,7 +16,7 @@ namespace List_Web
         protected void Page_Load(object sender, EventArgs e)
         {
             PokemonNegocio negocio = new PokemonNegocio();
-            PokemonList = negocio.listarconSP();
+            PokemonList = negocio.listarConSP();
 
             
 
